@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #393E46;
+    width: 100%;
+    padding: 2% 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navHeader h1 {
+    color: #FFD369;
+    font-size: 2.5rem;
+}
+
+.navSearch {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#searchbox {
+    width: 70%;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 1.75rem;
+    border: 2px solid #FFD369;
+    border-radius: 5px;
+    margin-right: 2%;
+    color: #222831;
+    background-color: #EEEEEE;
+}
+
+#mybutton {
+    width: 20%;
+    height: 40px;
+    font-size: 1.5rem;
+    color: #222831;
+    background-color: #FFD369;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#mybutton:hover {
+    background-color: #FFCA61;
+}
+
+.main_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+    width: 90%;
+    padding: 2%;
+    background-color: #393E46;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card-header {
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+    color: #FFD369;
+}
+
+.nutrition_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.nutrition_table th,
+.nutrition_table td {
+    border: 1px solid #FFD369;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.25rem;
+}
+
+.nutrition_table th {
+    background-color: #FFD369;
+    color: #222831;
+}
+
+.nutrition_table td {
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+.footer {
+    width: 100%;
+    background-color: #393E46;
+    padding: 10px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer p {
+    color: #FFD369;
+    font-size: 1rem;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navHeader h1 {
+        font-size: 2rem;
+    }
+
+    #searchbox {
+        width: 60%;
+        font-size: 1.5rem;
+    }
+
+    #mybutton {
+        width: 30%;
+        font-size: 1.25rem;
+    }
+
+    .main_div {
+        width: 95%;
+        padding: 5%;
+    }
+
+    .card-header {
+        font-size: 2rem;
+    }
+
+    .nutrition_table th,
+    .nutrition_table td {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .footer p {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navHeader h1 {
+        font-size: 1.75rem;
+    }
+
+    #searchbox {
+        width: 55%;
+        font-size: 1.25rem;
+    }
+
+    #mybutton {
+        width: 40%;
+        font-size: 1rem;
+    }
+
+    .main_div {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .card-header {
+        font-size: 1.75rem;
+    }
+
+    .nutrition_table th,
+    .nutrition_table td {
+        font-size: 0.875rem;
+        padding: 6px;
+    }
+
+    .footer p {
+        font-size: 0.75rem;
+    }
+}

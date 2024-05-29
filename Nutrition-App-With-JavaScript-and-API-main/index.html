@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CELEBI Nutritional Values</title>
+</head>
+<body>
+    <nav class="navbar" id="myNav">
+        <div class="navHeader">
+            <h1>CELEBI Nutritional Values</h1>
+        </div>
+        <div class="navSearch">
+            <input id="searchbox" type="text">
+            <button id="mybutton" onclick="get_send_data();">Search</button>
+        </div>
+    </nav>
+
+    <div class="main_div">
+        <h1 class="card-header" id="food_name">NAME</h1>
+        <table class="nutrition_table">
+            <tr>
+                <th>Nutrition</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Carbohydrates</td>
+                <td id="carbohydrates_total">-</td>
+            </tr>
+            <tr>
+                <td>Cholesterol</td>
+                <td id="cholesterol_mg">-</td>
+            </tr>
+            <tr>
+                <td>Saturated Fat</td>
+                <td id="fat_saturated_g">-</td>
+            </tr>
+            <tr>
+                <td>Total Fat</td>
+                <td id="fat_total_g">-</td>
+            </tr>
+            <tr>
+                <td>Fiber</td>
+                <td id="fiber_g">-</td>
+            </tr>
+            <tr>
+                <td>Potassium</td>
+                <td id="potassium_mg">-</td>
+            </tr>
+            <tr>
+                <td>Protein</td>
+                <td id="protein_g">-</td>
+            </tr>
+            <tr>
+                <td>Serving Size</td>
+                <td id="serving_size_g">-</td>
+            </tr>
+            <tr>
+                <td>Sodium</td>
+                <td id="sodium_mg">-</td>
+            </tr>
+            <tr>
+                <td>Sugar</td>
+                <td id="sugar_g">-</td>
+            </tr>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 CELEBI Nutritional Values. All rights reserved.</p>
+    </footer>
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
